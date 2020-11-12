@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #C9CCD6;
+    background: linear-gradient(to right, #d9dde9, #C9CCD6);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    word-break: break-word;
+    margin: 10px;
+}
+
+
+/********** COMMON CLASS **********/
+
+.mediumFont{
+    font-weight: 400;  
+}
+
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align{
+    align-items: center;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.marginR{
+    margin-right: 5px;
+}
+
+.marginL{
+    margin-left: 10px;
+}
+
+.marginT{
+    margin-top: 20px;
+}
+
+.marginB{
+    margin-bottom: 5px;
+}
+
+.shrink{
+    flex-shrink: 0;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+/********************************/
+
+.container{
+    max-width: 900px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    margin: auto;
+    padding: 20px 40px 40px;
+}
+
+.iconCross{
+    height: 10px;
+    right: 20px;
+}
+
+.category{
+    font-size: 0.7em; 
+    color: #8E919B;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.blackText{
+    color: #000
+}
+
+.title{
+    font-size: 1em; 
+    color: #3A3E47;
+}
+
+.profileCard{
+    border-radius: 20px;
+    transform: translateX(0px);
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.color{
+    background: #FAFAFA;
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+    right: 0;
+}
+
+.detailedInfo{
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px 0 20px 30px;
+}
+
+.generalInfo{
+    background: #FFF;
+    width: 320px;
+    min-height: 230px;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px #828B9F24;
+    padding: 20px;
+    /* padding: 2.5vmin; */
+}
+
+.generalInfo .title{
+    max-width: 122px;
+}
+
+.profilePicture{
+    background: #C9CCD6;
+    border: 3px #FFF solid;
+    justify-content: center;
+    color: #FFF;
+    margin-right: 20px;
+    box-shadow: 0px 10px 25px #858EA82F;
+    font-size: 1.7em;
+    height: 60px;
+    width: 60px; 
+    border-radius: 100px;
+}
+
+
+.candidateAge{
+    background: #3EB8FD;
+    margin-left: 10px;
+    color: #FFF;
+    font-size: 0.7em;
+    border-radius: 100px;
+    padding: 0 7px;
+}
+
+.email{
+    color: #8E919B;
+    font-size: 0.8em; 
+}
+
+
+.candidateInfo{
+    font-size: 0.8em;
+}
+
+.applyDate{
+    font-size: 0.5em; 
+    color: #ABB6BC;
+}
+
+
+/********** BUTTON **********/
+
+.downloadCV{
+    font-size: 0.7em;
+    background: #3EB8FD;
+    color: #FFF;
+    box-shadow: 0px 3px 10px #6B798D46;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    padding: 7px 20px;
+}
+
+.downloadCV:hover{
+    background: #33b4ff;
+}
+
+.downloadCV:focus{
+    outline: 0;
+}
+
+.downloadCV:active{
+    background: #21adff;
+    box-shadow: 0px 3px 8px #6B798D46;
+}
+
+
+/********** ICONS **********/
+
+.iconBox{
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.location .iconBox{
+    background: #C2FAE0;
+}
+
+.profileInfo .iconBox{
+    background: #DCD6F7;
+}
+
+.skillsCard .iconBox{
+    background: #F4D47D;
+}
+
+.experienceCard .iconBox{
+    background: #BCE3F8;
+}
+
+.formationCard .iconBox{
+    background: #F4C0C0;
+}
+
+.icon{
+    width: 15px;
+    height: 12px;
+    margin: 0 auto;
+}
+
+
+/********** EXP & FORM **********/
+
+.gridCard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 40px;
+    padding: 0 10px;
+}
+
+.middleLine1, .middleLine2{
+    width: 5px;
+    border-radius: 100px;
+    background: #F5F5F5;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.scale{
+    left: 50%;
+    top: 0;
+    bottom: -20px;
+    transform: translateX(-50%);
+    justify-content: space-between;
+}
+
+.scale .candidateInfo{
+    font-size: 0.7em;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+}
+
+.skillsBox{
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    flex-shrink: 0;
+}
+
+
+.experienceCard{
+    justify-content: flex-end;
+    text-align: right;
+    grid-column: 1;
+    border-radius: 10px 5px 5px 10px;
+}
+
+.formationCard{
+    grid-column: 2;
+    transform: translateY(20px);
+    border-radius: 5px 10px 10px 5px;
+}
+
+.boxShadow{
+    box-shadow: 0px 3px 25px #6E838E29;
+    padding: 10px;
+}
+
+.redDot, .blueDot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.experienceCard .blueDot{
+    background: #2D6380;
+    margin-left: 7px;
+}
+
+.experienceCard .redDot{
+    display: none;
+}
+
+.formationCard .redDot{
+    background: #BC1616;
+    margin-right: 7px;
+}
+
+.formationCard .blueDot{
+    display: none;
+}
+
+
+/********** RESPONSIVE **********/
+
+@media (max-width: 850px) {
+    .color{
+        background: #FAFAFA;
+        border-radius: 20px;
+        top: 150px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .profileCard{
+        display: block;
+        border-radius: 20px;
+        transform: translateX(0px);
+        width: 100%;
+        height: calc(100% - 150px);
+        margin: 20px 0px;
+        padding: 10px;
+    }
+    .generalInfo{
+        width: 100%;
+        max-width: 500px;
+    }
+    .generalInfo .title{
+        max-width: 200px;
+    }
+    .detailedInfo{
+        width: 100%;
+        padding: 20px 0 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    .gridCard{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px 40px;
+    
+    }
+    .experienceCard{
+        grid-column: 1;
+        margin-left: 8%;
+    }
+    
+    .formationCard{
+        grid-column: 1;
+        margin-right: 8%;
+        transform: translateY(0px);
+    }
+    .middleLine1{
+        left: 0%;
+        top: 42px;
+        /* background: #F4C0C0; */
+    }
+    .middleLine2{
+        left: 100%;
+        top: 0;
+        /* background: #BCE3F8; */
+    }
+    .scale{
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .container{
+        padding: 20px;
+    }
+    .profilePicture{
+        margin-right: 10px;
+    }
+    .generalInfo{
+        min-height: 200px;
+        padding: 10px;
+    }
+}
