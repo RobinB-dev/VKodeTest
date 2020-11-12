@@ -290,9 +290,12 @@ body{
 }
 
 
-.experienceCard{
+.experienceCard, .experienceCard .flex{
     justify-content: flex-end;
     text-align: right;
+}
+
+.experienceCard{
     grid-column: 1;
     border-radius: 10px 5px 5px 10px;
 }
